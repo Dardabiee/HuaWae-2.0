@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Nabla&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@400;500&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    outline: 0;
+    border: none;
+    
+}
+:root{
+    --bg-color:#3408e1;
+    --text-color:#ffffff;
+    --text2-color:#ffffff;
+    --big-font:4rem;
+    --h2-font:2.25rem;
+    --p-font:0,9rem;  
+    --main-color:rgb(255, 194, 140); 
+}
+html{
+    font-size: 62.5%;
+    overflow-x:hidden ;
+}
+body{
+    background: rgb(0, 0, 0);
+    
+}
+.header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px 9%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+} 
+.logo{
+    color: var(--text-color);
+    cursor: default;   
+}
+.logo img{
+    width: 45%;
+}
+
+
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-right: 1rem;
+    transition: .4s ;
+    text-decoration: none;
+    transition: .4s ease;
+}
+.navbar a:hover{
+    color:rgba(120, 117, 115, 0.662);
+    letter-spacing: 2px;
+   
+}
+span{
+    color: rgba(120, 117, 115, 0.662) ;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+}
+.home-judul h1 {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color:2.4;    
+    font-family: 'Zen Dots', sans-serif;
+}
+section{
+    margin: 0.5rem;
+}
+.home-content{
+    color: var(--text2-color);
+    padding-top:10rem;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.about{
+    margin-top: 9rem;
+    padding: 4rem;
+    color: var(--text-color);
+}
+.about-section h4{
+    font-size: 3.5rem;
+}
+.about-section P{
+    width: 50%;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: 7px;
+}
+.contact-container{
+    background-color: #868686;
+    width: 60%;
+    height: auto;
+    align-content: end;
+    padding: 4rem;
+    
+}
+.block-contact{
+    padding: 5rem 5rem;
+}
+.block-contact h2{
+    text-align: center;
+    font-size: 4rem;
+}
+.block-contact p{
+    text-align: left;
+    font-size: 1.8rem;
+    padding: 1rem 5rem;
+}
+.service-content{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.3rem;
+    padding-bottom: 4rem ;
+}
+.service-container .service-content{
+    flex: 1 1 30rem;
+    padding: 0 10rem;
+    text-align: center;
+}
+.service-container h3{
+    margin-left: 4rem;
+    font-size: 2rem;
+}
+.service-container p{
+    font-size: 1.3rem;
+}
+.contact{
+    margin: 10rem;
+}
+.social-media{
+    color: var(--text-color);
+    padding: 10px 1rem;
+}
+.social-media h1{
+    font-size: 5rem;
+    font-weight: 600;
+}
+.social-media p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.social-media a{
+    text-decoration: none;
+    color: #868686;
+}
+@media(max-width:768px){
+    html{
+        font-size: 15%;
+    }
+    section{
+        margin-top: 10rem;
+    }
+    .logo{
+        width: 60%;
+    }
+    .navbar a{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .about-section h4{
+        font-size: 10rem;
+    }
+    .about-section p{
+        font-size: 5rem;
+        width: 100%;
+        text-align: justify;
+    }
+     .contact-container{
+        width: 100%;
+        height: 50vh;
+     }
+     .block-contact h2{
+        font-size: 8rem;
+     }
+     .block-contact p{
+        font-size: 4rem;
+     }
+     .block-contact h3{
+        font-size: 7rem;
+     }
+     .service-content{
+        margin-top: 15px;
+     }
+    .social-media h3{
+        font-size: 5rem;
+    }
+    .social-media h1{
+        font-size: 10rem;
+    }
+    .social-media p{
+        font-size: 6rem;
+    }
+}
