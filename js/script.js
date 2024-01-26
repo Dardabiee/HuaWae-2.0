@@ -1,5 +1,5 @@
 var i = 0;
-var tulisan = 'Muhammad Darda Fathammubienaa';
+var tulisan = 'HAVE A GOOD DAY';
 var kecepatan = 50;
 
 function tulis(){

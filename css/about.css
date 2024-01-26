@@ -85,7 +85,8 @@ section{
     margin: 0.5rem;
 }
 .home-content{
-    color: var(--text2-color);
+    color: transparent;
+    -webkit-text-stroke: .10rem white;
     padding-top:10rem;
     font-size: 4rem;
     font-weight: 700;
@@ -178,6 +179,11 @@ section{
     .navbar a{
         font-size: 3rem;
         text-align: center;
+    }
+    .home-content{
+       color: transparent;
+       -webkit-text-stroke: .15rem white;
+       font-size: 7rem;
     }
     .about-section h4{
         font-size: 10rem;
