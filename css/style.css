@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Nabla&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@400;500&family=Zen+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Francois+One&family=Nabla&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@400;500&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Zen+Dots&display=swap');
 
 *{
     padding: 0;
@@ -74,8 +75,15 @@ body{
     display:none ;
     font-size: 3.6rem;
 }
-span{
+.rpl{
     color: rgba(120, 117, 115, 0.662) ;
+    transition: .8s;
+}
+
+.rpl:hover{
+    color: transparent;
+    -webkit-text-stroke: .20rem gray;
+    letter-spacing: .1rem;
 }
 .animation{
     overflow: hidden;
@@ -157,6 +165,9 @@ span{
 .intro-img{
     margin-left: 10rem;
 }
+.project{
+    padding: 10rem;
+}
 .intro-img img{
     width: 10%;
     height: auto;
@@ -166,6 +177,25 @@ span{
 }
 .latest{
     margin-bottom: 15rem;
+    
+}
+.latest h1{
+    color: transparent;
+    -webkit-text-stroke: .1rem grey;
+    font-size: 11rem;
+    font-weight: 600;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1rem;
+    transition: .4s ease;
+    font-style: italic;
+    margin-left: 2rem;
+}
+.lpp{
+    padding-left: 16rem;
+}
+.latest h1:hover{
+    font-size: 12rem;
+    -webkit-text-stroke: .1rem whitesmoke;
 }
 .latest-content{
     margin: auto;
@@ -348,8 +378,11 @@ html{
     display: none;
     margin-left: 20px;
 }
-.latest img{
-    width: 100%;
+.latest{
+    padding: 20rem;
+}
+.latest h1{
+    font-size: 15rem;
 }
 .bx-img{
     width: 70%;
